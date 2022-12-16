@@ -12,7 +12,7 @@ function Footer(props) {
 <hr/>
 
 <p>
-    Copyright &copy; All Rights Reserved Brush Cutz 2022 
+    Copyright &copy; All Rights Reserved Colty Temple 2022 
 <br/>
     This Site Was Made By Digital Investors Hub
 <br/>
