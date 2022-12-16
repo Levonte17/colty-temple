@@ -227,9 +227,10 @@ input{
     }
   }
  }
-@media (min-width: 768px){
+@media (max-width: 768px){
   .nav {
-    justify-content: flex-start;
-    font-size: $main-font-size;
+    font-size: large;
+    display:block;
+    text-align: center;
   }
 }
