@@ -4,51 +4,37 @@ function Hour(props) {
 
 <div className="hour">
 <h1>
-  Come And Join Us Here At Colty Temple
+    Come And Join Us Here At Colty Temple N.C.O.C 
     <p className="hourp">
-      Service Is Held At Our Home Or Via Teleconference
+    The table is spread  and the feast of the Lord is going on
     </p>
 </h1>
+<h3>
+  Tuesday Night Bible Study At 7:30 PM
+</h3>
+<p>
+In consideration of COVID-19 service is and will be hosted by teleconference
+</p>
 
 <h3>
-  Sunday Worship        
-  10:00 am ET
+  Friday Night Praise And Worship At 7:30 PM
 </h3>
-<p> 
-  In Consideration Of Covid-19:
-  <br/>
-  We are home every 2nd and 4th Sunday in the month.
-  <br/>
-  We come together in worship and hear the word of god.
-  <br/>
-  After service we enjoy a fulfilling meal from our very own Kitchen.
+<p>
+In consideration of the COVID 19 service is and will be hosted by teleconference
 </p>
+
 <h3>
-  Tuesday Bible Study           
-  7:30 pm ET
+  Sunday  School At 9:00 AM
 </h3>
-<p> 
-  In Consideration Of Covid-19:
-  <br/>
-  Bible Study is and will be hosted via teleconference.
-  <br/>
-  We breifly come together to recharge and discuss gods word.
-  <br/>
-  Here we come gather a deeper understanding of the word. 
-</p>
+
 <h3>
-  Wednesday Bible Study
-  7:30 pm ET
+  Morning Worship Service Begin At 10:00 AM
 </h3>
-<p> 
-  In Consideration Of Covid-19:
-  <br/>
-  Bible Study is and will be hosted via teleconference.
-  <br/>
-  We breifly come together to recharge and discuss gods word.
-  <br/>
-  Here we come gather a deeper understanding of the word. 
+<p>
+Come out and let us praise the Lord together
+<br/>  Service will be healed at the church
 </p>
+
 </div>
   )
 };

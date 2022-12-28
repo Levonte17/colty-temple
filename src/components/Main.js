@@ -1,28 +1,28 @@
 import { useState, useEffect,  } from 'react';
-
 import { Routes, Route } from 'react-router-dom';
-///////PAGES///////////////////
-import List from '../pages/List';
-import ShowList from '../pages/ShowList';
+///////PAGES//////////////////////////////////////////
+import Hours from '../pages/Hours';
+import Announcements from '../pages/Announcements';
+import ShowAnnouncements from '../pages/ShowAnnouncements';
 import Homepage from '../pages/Homepage';
 
 function Main(props) {
 
-    const [people, setPeople] = useState(null);
-    //const API_URL = 'http://localhost:4003/api/people/';
-    const API_URL = 'https://dih-api.adaptable.app/api/people';
+    const [announcements, setAnnouncements] = useState(null);
+    const API_URL = 'http://localhost:4003/api/announcements/';
+    //const API_URL = 'https://dih-api.adaptable.app/api/announcement';
 
 const getData = async () => {
     try {
         const response = await fetch(API_URL);
         const data = await response.json();
-        setPeople(data);
+        setAnnouncements(data);
     } catch (error) {
         console.log(error)
     }
 }
 
-const createPeople = async (person) => {
+const createAnnouncements = async (person) => {
     try {
         await fetch(API_URL, {
             method: 'POST',
@@ -50,14 +50,14 @@ const deletePeople = async (id) => {
     }
 }
 
-const updatePeople = async (updatedPeople, id) => {
+const updateAnnouncements = async (updatedAnnouncements, id) => {
     try {
         await fetch(API_URL + id, {
             method: 'PUT',
             headers: {
                 'Content-type': 'Application/json'
             },
-            body: JSON.stringify(updatedPeople)
+            body: JSON.stringify(updatedAnnouncements)
         });
         
         getData();
@@ -86,18 +86,24 @@ useEffect(() => {
         />
     } />
     
-    <Route path="/people" element={
-        <List            
-            people={people} 
-            createPeople={createPeople} 
+    <Route path="/hours" element={
+        <Hours 
+             
         />
     } />
     
-    <Route path="/people/:id" element={
-        <ShowList 
-            people={people}
+    <Route path="/announcements" element={
+        <Announcements            
+            announcements={announcements} 
+            createAnnouncements={createAnnouncements} 
+        />
+    } />
+    
+    <Route path="/announcements/:id" element={
+        <ShowAnnouncements 
+            announcements={announcements}
             deletePeople={deletePeople}
-            updatePeople={updatePeople} 
+            updateAnnouncements={updateAnnouncements} 
         />
     } />
 </Routes>

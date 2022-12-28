@@ -31,28 +31,7 @@ $contrast-color: purple;
   width: 12.5rem;
   border-radius: 50%;
 }
-/////////////// Price List ////////////////////////
-.price{
-  color: white;
-  font-size: 2rem;
-  text-align: center;
-  h1{
-    color:black;
-  text-shadow: 2px 2px 2px red;
-  font-size: 4rem;
-  justify-content: center;
-  text-align: center;
-  }
-  h2{
-    color: red;
-    text-align: center;
-  }
-  h3{
-    color: red;
-    text-align: center;
-  }
-  
-}
+
 /////////////// COMMUNITY ////////////////////////
 .left{
   color:white;
@@ -111,13 +90,13 @@ $contrast-color: purple;
 .home h1{
   font-size: 5rem;
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
   color: purple;
   text-shadow: 2px 2px 2px white;
 
 }
 .home p{
-  font-size: 4rem;
+  font-size: 2rem;
   color: purple;
   text-shadow: 2px 2px 2px white;
   text-decoration: none;
@@ -137,7 +116,7 @@ $contrast-color: purple;
   } &:hover {
     text-decoration: underline;
   }
-  }
+}
 ///////////// HOURS ////////////////////////////////
 .hour{
   background-image: url('../src/assets/coltyhours.jpeg');
@@ -145,25 +124,65 @@ $contrast-color: purple;
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding-bottom: 2%;
-
+  padding-bottom: 5%;
+  padding-top: 5%;
+  
   h1{
     font-size: 3rem;
+    padding-top: 3%;
     padding-bottom: 1%;
     color: goldenrod;
+    text-shadow: 2px 2px 2px BLACK;
+
   }
   h3{
     color: goldenrod;
     font-size: 3rem;
+    text-shadow: 2px 2px 2px BLACK;
+    
   }
   p{
     color: white;
     padding-bottom: 2%;
     font-size: 2rem;
+    text-shadow: 2px 2px 2px BLACK;
+    
+  }
+}
+///////////// HOURS PAGE ////////////////////////////////
+.hours{
+text-align: center;
+padding-bottom: 5%;
+padding-top: 5%;
+
+h1{
+  font-size: 3rem;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  color: goldenrod;
+    text-shadow: 2px 2px 2px BLACK;
+
+  }
+  h3{
+    color: goldenrod;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px BLACK;
+
+  }
+  p{
+    color: white;
+    padding-bottom: 2%;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px BLACK;
+
   }
 }
 ///////////// CONTACT ////////////////////////////////
+.contact1{
+  display: flex;
+}
 .contact{
+  display: flex;
   text-align: center;
   justify-content: center;
   background-color: white;
@@ -173,7 +192,12 @@ $contrast-color: purple;
     text-decoration: none;
     color: purple;
     font-size: 3rem;
+    padding-bottom: 5%;
 
+  }
+  .con{
+    padding-bottom: 10%;
+    padding-left: 5%;
   }
 }
 ///////////// SECTION ////////////////////////////////
@@ -227,10 +251,49 @@ input{
     }
   }
  }
+
+
+
+
+
 @media (max-width: 768px){
   .nav {
     font-size: large;
     display:block;
     text-align: center;
   }
+///////////// CONTACT ////////////////////////////////
+.contact1{
+  display: block;
+}
+.contact{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  a{
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: purple;
+    font-size: 3rem;
+    padding-bottom: 5%;
+
+  }
+  .con{
+    padding-bottom: 10%;
+    padding-left: 5%;
+  }
+}
+/////////////// COMMUNITY ////////////////////////
+.left{
+  color:white;
+  text-shadow: 5px 5px 5px plum;
+  font-size: 1rem;
+  padding-top: 2%;
+  justify-content: center;
+  text-align: center;
+}
+
+
 }

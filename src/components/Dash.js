@@ -22,7 +22,8 @@ function Dash(props) {
             Behold, The 
         Lord's
         Hand Is Not Shortened
-        That It Cannot Save; 
+        That It Cannot Save;
+        <br/> 
         Neither His Ear Heavy, 
         That Cannot Hear
         <br/>

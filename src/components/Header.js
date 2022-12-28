@@ -8,20 +8,12 @@ function Header(props) {
                     <div className='nav-logo'>Home</div>
                 </Link>
                 
-                <Link to="/prayer">
-                    <div className='nav-logo'>Prayer</div>
-                </Link>
-                
                 <Link to="/announcements">
                     <div className='nav-logo'>Announcements</div>
                 </Link>
                 
                 <Link to="/hours">
                     <div className='nav-logo'>Hours</div>
-                </Link>
-                
-                <Link to="/community">
-                    <div className='nav-logo'>Community</div>
                 </Link>
                 
             </nav>

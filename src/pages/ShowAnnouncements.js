@@ -1,16 +1,18 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom';
 
-function ShowList({ people, deletePeople, updatePeople }) {
+function ShowAnnouncements({ announcements, deleteAnnouncements, updateAnnouncements }) {
     const { id } = useParams();
     
-    const person = people ? people.find(p => p._id === id) : null;
+    const person = announcements ? announcements.find(p => p._id === id) : null;
 
     const navigate = useNavigate();
     
     const [editForm, setEditForm] = useState({
-        name: '',
-        title: '',
+        church: '',
+        date: '',
+        time: '',
+        event: '',
         updatedAt: '',
     });
 
@@ -26,8 +28,8 @@ function ShowList({ people, deletePeople, updatePeople }) {
     const handleSubmit = (e) => {
         // prevent default behavior
         e.preventDefault()
-        // call the updatePeople function and pass in the required values
-        updatePeople(editForm, id);
+        // call the updateAnnouncements function and pass in the required values
+        updateAnnouncements(editForm, id);
         setIsEditing(false);
     };
     
@@ -38,8 +40,8 @@ function ShowList({ people, deletePeople, updatePeople }) {
     const loaded = () => {
         
         const handleDelete = () => {
-            deletePeople(person._id)
-            navigate('/people');
+            deleteAnnouncements(person._id)
+            navigate('/announcements');
         };
 
         const handleEdit = () => {
@@ -67,7 +69,7 @@ function ShowList({ people, deletePeople, updatePeople }) {
 
     return (
         <section>
-            {people ? loaded() : loading()}
+            {announcements ? loaded() : loading()}
             { isEditing && 
                 <form onSubmit={handleSubmit}>
                     <label>Name:
@@ -94,5 +96,5 @@ function ShowList({ people, deletePeople, updatePeople }) {
     );
 }
 
-export default ShowList;
+export default ShowAnnouncements;
 
