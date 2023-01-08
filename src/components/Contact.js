@@ -5,7 +5,6 @@ function Contact(props) {
     return(
         <div className="contact">
         <div className="contact1">
-
   <a href="tel:+9124465582">
     Call Us: 
     <br/>

@@ -26,20 +26,27 @@ $contrast-color: purple;
     box-sizing: border-box;
     background-color: purple;
   }
-.avatar-image {
+.avatarimg {
   height: 12.5rem;
   width: 12.5rem;
   border-radius: 50%;
 }
-
+/////////////// addannoun ////////////////////////
+.addannoun{
+form{
+  font-size: 2rem;
+}
+}
 /////////////// COMMUNITY ////////////////////////
 .left{
   color:white;
-  text-shadow: 5px 5px 5px plum;
   font-size: 3rem;
   padding-top: 2%;
   justify-content: center;
   text-align: center;
+  h1{
+    text-shadow: 5px 5px 5px plum;
+}
 }
 /////////////// DASH ////////////////////////
 .dashp, p{
@@ -126,14 +133,17 @@ $contrast-color: purple;
   text-align: center;
   padding-bottom: 5%;
   padding-top: 5%;
-  
+  .pp{
+    padding-bottom: 5%;
+  }
   h1{
     font-size: 3rem;
     padding-top: 3%;
     padding-bottom: 1%;
     color: goldenrod;
     text-shadow: 2px 2px 2px BLACK;
-
+    padding-bottom: 2%;
+    
   }
   h3{
     color: goldenrod;

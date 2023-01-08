@@ -15,13 +15,16 @@ function Hour(props) {
 <p>
 In consideration of COVID-19 service is and will be hosted by teleconference
 </p>
-
+<br/>
+<br/>
 <h3>
   Friday Night Praise And Worship At 7:30 PM
 </h3>
 <p>
 In consideration of the COVID 19 service is and will be hosted by teleconference
 </p>
+<br/>
+<br/>
 
 <h3>
   Sunday  School At 9:00 AM
@@ -30,7 +33,7 @@ In consideration of the COVID 19 service is and will be hosted by teleconference
 <h3>
   Morning Worship Service Begin At 10:00 AM
 </h3>
-<p>
+<p className="pp">
 Come out and let us praise the Lord together
 <br/>  Service will be healed at the church
 </p>
