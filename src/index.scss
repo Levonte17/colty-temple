@@ -172,21 +172,21 @@ h1{
   padding-top: 3%;
   padding-bottom: 1%;
   color: goldenrod;
-    text-shadow: 2px 2px 2px BLACK;
-
-  }
-  h3{
-    color: goldenrod;
+  text-shadow: 2px 2px 2px BLACK;
+  
+}
+h3{
+  color: goldenrod;
     font-size: 3rem;
     text-shadow: 2px 2px 2px BLACK;
-
+    
   }
   p{
     color: white;
     padding-bottom: 2%;
     font-size: 2rem;
     text-shadow: 2px 2px 2px BLACK;
-
+    
   }
 }
 ///////////// CONTACT ////////////////////////////////
@@ -205,7 +205,7 @@ h1{
     color: purple;
     font-size: 3rem;
     padding-bottom: 5%;
-
+    
   }
   .con{
     padding-bottom: 10%;
@@ -219,7 +219,7 @@ section{
   font-size: x-large;
   text-align: center;
   text-shadow: 2px 2px 2px white;
-
+  
 }
 strong{
   font-style:italic;
@@ -304,7 +304,164 @@ input{
 //////////////////////////////
 //////////////////////////////
 
-@media (max-width: 768px){
+@media (max-width: 868px){
+  ///////////// HOURS ////////////////////////////////
+  .hour{
+    background-image: url('../src/assets/coltyhours.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    .pp{
+      padding-bottom: 5%;
+    }
+    h1{
+      font-size: 2rem;
+      padding-top: 3%;
+      padding-bottom: 1%;
+      color: goldenrod;
+      text-shadow: 2px 2px 2px BLACK;
+      padding-bottom: 2%;
+      
+    }
+    h3{
+      color: goldenrod;
+      font-size: 2rem;
+      text-shadow: 2px 2px 2px BLACK;
+      
+    }
+    p{
+      color: white;
+      padding-bottom: 2%;
+      font-size: x-large;
+      width: 75%;
+      padding-left: 15%;
+      text-shadow: 2px 2px 2px BLACK;
+      
+    }
+  }
+  ////////////////////// HOME ///////////////////////
+   a:hover {
+   padding: 1% 1% 1%;
+   text-shadow: 2px 2px 2px white;
+    font-size: 2rem;
+   }
+  .here:hover {
+    padding: 1% 1% 1%;
+    text-shadow: 12px 12px 12px black;
+  }
+  .here{
+    color: plum;
+    font-size: xx-large;
+    font-weight: 100;
+    text-shadow: 2px 2px 2px purple;
+    padding-bottom: 2%;
+  }
+  .home{
+    background-image: url('../src/assets/coltyhome.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 5%;
+  
+  }
+  .home h1{
+    font-size: 3rem;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    color: purple;
+    text-shadow: 2px 2px 2px white;
+  
+  }
+  .home p{
+    font-size: 2rem;
+    color: purple;
+    text-shadow: 2px 2px 2px white;
+    text-decoration: none;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 5%;
+  }
+  .home h2{
+    font-size: 3rem;
+    padding-bottom: 20%;
+  }
+  .auth-options {
+    display: flex;
+    align-items: center; 
+    div{
+      margin-right: 1.5rem;
+      cursor: pointer;
+    } &:hover {
+      text-decoration: underline;
+    }
+  }
+  ///////////// HOURS PAGE ////////////////////////////////
+  .hours{
+  text-align: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  
+  h1{
+    font-size: 2rem;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: goldenrod;
+      text-shadow: 2px 2px 2px BLACK;
+  
+    }
+    h3{
+      color: goldenrod;
+      font-size: 2rem;
+      text-shadow: 2px 2px 2px BLACK;
+  
+    }
+    p{
+      color: white;
+      padding-bottom: 2%;
+      font-size: x-large;
+      width: 75%;
+      padding-left: 15%;
+      padding-bottom: 10%;
+      text-shadow: 2px 2px 2px BLACK;
+  
+    }
+  }
+  ///////////// ANNOUNCEMENTS ////////////////////////////////
+  ///////////// ANNOUNCEMENTS ////////////////////////////////
+  ///////////// ANNOUNCEMENTS ////////////////////////////////
+  .announcements{
+    background-color: plum;
+    color: white;
+    text-align: center;
+    padding-bottom: 20%;
+    padding-top: 5%;
+    h1{
+      font-size: 2rem;
+      padding-top: 3%;
+      padding-bottom: 1%;
+      color: goldenrod;
+      text-shadow: 2px 2px 2px purple;
+      padding-bottom: 2%;
+      
+    }
+    h3{
+      color: goldenrod;
+      font-size: 2rem;
+      text-shadow: 2px 2px 2px purple;
+      
+    }
+    p{
+      color: white;
+      padding-bottom: 2%;
+      font-size: x-large;
+      text-shadow: 2px 2px 2px purple;
+      
+    }
+  }
   .nav {
     font-size: large;
     display:block;
@@ -324,13 +481,14 @@ input{
     justify-content: center;
     text-decoration: none;
     color: purple;
-    font-size: 3rem;
+    font-size: 2rem;
     padding-bottom: 5%;
 
   }
   .con{
     padding-bottom: 10%;
     padding-left: 5%;
+    font-size: 2rem;
   }
 }
 /////////////// COMMUNITY ////////////////////////
@@ -341,7 +499,5 @@ input{
   padding-top: 2%;
   justify-content: center;
   text-align: center;
-}
-
-
+  }
 }
