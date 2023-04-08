@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
+import one from '../assets/one.png';
+import two from '../assets/two.png';
 
 function Announcements(props) {
 
@@ -24,40 +26,16 @@ function Announcements(props) {
       const loading = () => {
         return (
 <div className='announcements'>
-  <h1> 
-    Saturday, March 4
-  </h1>
-<p>
-  Deacon Appreciation Day
-  <br/>
-  Start Time: 7:30pm
-</p>
-  <h1> 
-    Saturday, March 8 - 9
-  </h1>
-<p>
-  Beaufort Church Spring Revival (In House)
-  <br/>
-  Start Time: 7:30pm
-</p>
-
-  <h1> 
-    Saturday, March 18
-  </h1>
-<p>
-  Family And Friends Night
-  <br/>
-  Start Time: 7:30pm
-</p>
-
-  <h1> 
-    Saturday, March 22 - 25
-  </h1>
-<p>
-  Biship 21st Anniversary
-  <br/>
-  Start Time: 7:30pm
-</p>
+<img 
+            src={one} 
+            alt='mori'
+            className="pimg"
+            />
+        <img 
+            src={two} 
+            alt='mori'
+            className="pimg"
+          />
 
 </div>        )
       };
